@@ -1,0 +1,38 @@
+[debug] [2023-08-11T11:39:45.613Z] ----------------------------------------------------------------------
+[debug] [2023-08-11T11:39:45.620Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-11T11:39:45.621Z] CLI Version:   12.4.7
+[debug] [2023-08-11T11:39:45.622Z] Platform:      win32
+[debug] [2023-08-11T11:39:45.622Z] Node Version:  v20.2.0
+[debug] [2023-08-11T11:39:45.623Z] Time:          Fri Aug 11 2023 17:09:45 GMT+0530 (India Standard Time)
+[debug] [2023-08-11T11:39:45.623Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-11T11:39:45.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-11T11:39:45.642Z] > authorizing via signed-in user (dashorashalin8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\admin\poc_app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-11T11:40:25.048Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-08-11T11:40:25.722Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 500
+[debug] [2023-08-11T11:40:25.722Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-08-11T11:40:25.724Z] HTTP Error: 500, Internal error encountered.
+[debug] [2023-08-11T11:40:25.987Z] FirebaseError: HTTP Error: 500, Internal error encountered.
+    at responseToError (C:\Users\admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
